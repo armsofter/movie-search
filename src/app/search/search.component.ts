@@ -29,13 +29,18 @@ export class SearchComponent implements OnInit {
     if (this.str.length > 2) {
       this.moviesService.search(this.str).subscribe((res: any) => {
         console.log(res);
-        this.options = [];
-        this.options.push({
-          title: res.Title,
-          year: res.Year,
-          id: res.imdbID,
-          poster: res.Poster
-        });
+        if (res.Response === 'True') {
+          this.options = [];
+          for (let i = 0; i < res.Search.length; i++) {
+            this.options.push({
+              title: res.Search[i].Title,
+              year: res.Search[i].Year,
+              id: res.Search[i].imdbID,
+              poster: res.Search[i].Poster
+            });
+          }
+        }
+
       });
     }
   }

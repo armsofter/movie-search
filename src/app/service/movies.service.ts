@@ -15,7 +15,7 @@ export class MoviesService {
   search (str: string) {
     const headers = new HttpHeaders();
     headers.append('Content-Type', 'application/json');
-    return this.http.get(this.api + '?t=' + str + '&apikey=' + this.apiKey );
+    return this.http.get(this.api + '?s=' + str + '&apikey=' + this.apiKey );
   }
 
   getById (id: string) {
