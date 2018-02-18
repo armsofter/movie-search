@@ -1,0 +1,18 @@
+
+<div class="col-sm-12 favorite-box">
+  <h3>Favorites</h3>
+  <div class="col-sm-12 favorite-list">
+    <div *ngFor="let movie of allFavorite" class="col-sm-2 movie-box" (click)="openMovie(movie.id)">
+      <div class="col-sm-12 movie-image" >
+        <img src="{{movie.poster}}" alt="" class="img-responsive">
+      </div>
+      <div class="col-sm-12 text-center movie-title">
+        {{movie.title}} {{movie.year}}
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12  text-right">
+    <div class="see-more" (click)="showAll()">See all list</div>
+  </div>
+
+</div>

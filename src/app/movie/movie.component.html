@@ -1,0 +1,74 @@
+<div class="col-sm-12 movie-info-area">
+  <div class="col-sm-12 title-area">
+    {{currentMovie.Title}}
+    <button *ngIf="isFavorite" (click)="addFavorite()" class="btn">
+      Remove Favorite
+    </button>
+    <button *ngIf="!isFavorite" (click)="addFavorite()" class="btn">
+      Add Favorite
+    </button>
+  </div>
+  <div class="col-sm-4 poster-area">
+    <img src="{{currentMovie.Poster}}" alt="" class="img-responcive">
+  </div>
+  <div class="col-sm-8">
+    <div class="col-sm-12 info-area">
+      <div class="col-sm-12">
+        <div class="col-sm-3 info-label">Year</div>
+        <div class=" col-sm-9 info-box">{{currentMovie.Year}}</div>
+      </div>
+    </div>
+    <div class="col-sm-12 info-area">
+      <div class="col-sm-12">
+        <div class="col-sm-3 info-label">Released</div>
+        <div class=" col-sm-9 info-box">{{currentMovie.Released}}</div>
+      </div>
+    </div>
+    <div class="col-sm-12 info-area">
+      <div class="col-sm-12">
+        <div class="col-sm-3 info-label">Country</div>
+        <div class=" col-sm-9 info-box">{{currentMovie.Country}}</div>
+      </div>
+    </div>
+    <div class="col-sm-12 info-area">
+      <div class="col-sm-12">
+        <div class="col-sm-3 info-label">Director</div>
+        <div class=" col-sm-9 info-box">{{currentMovie.Director}}</div>
+      </div>
+    </div>
+    <div class="col-sm-12 info-area">
+      <div class="col-sm-12">
+        <div class="col-sm-3 info-label">Writer</div>
+        <div class=" col-sm-9 info-box">{{currentMovie.Writer}}</div>
+      </div>
+    </div>
+    <div class="col-sm-12 info-area">
+      <div class="col-sm-12">
+        <div class="col-sm-3 info-label">Genre</div>
+        <div class=" col-sm-9 info-box">{{currentMovie.Genre}}</div>
+      </div>
+    </div>
+    <div class="col-sm-12 info-area">
+      <div class="col-sm-12">
+        <div class="col-sm-3 info-label">Box Office</div>
+        <div class=" col-sm-9 info-box">{{currentMovie.BoxOffice}}</div>
+      </div>
+    </div>
+    <div class="col-sm-12 info-area">
+      <div class="col-sm-12">
+        <div class="col-sm-3 info-label">Metascore</div>
+        <div class=" col-sm-9 info-box">{{currentMovie.Metascore}}</div>
+      </div>
+    </div>
+    <div class="col-sm-12 info-area">
+      <div class="col-sm-12">
+        <div class="col-sm-3 info-label">Production</div>
+        <div class=" col-sm-9 info-box">{{currentMovie.Production}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-search-history></app-search-history>
+
+

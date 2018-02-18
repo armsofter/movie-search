@@ -1,0 +1,19 @@
+.movie-info-area {
+  margin-top: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #efefef;
+}
+.title-area {
+  margin-bottom:15px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.info-area {
+  border-bottom: 1px dotted #0101;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-size: 17px;
+  font-weight: 400;
+}

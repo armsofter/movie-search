@@ -1,0 +1,20 @@
+.favorite-box {
+  margin-top: 10px;
+  background-color: #efefef;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.favorite-list {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.movie-box {
+  cursor: pointer;
+  height:250px;
+}
+
+.see-more {
+  cursor: pointer;
+}

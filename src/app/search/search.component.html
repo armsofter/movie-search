@@ -1,0 +1,18 @@
+<div class="com-sm-12 search-box-area clearfix">
+  <div class="col-sm-1 home-link" [routerLink]="['']">
+    Home
+  </div>
+  <div class="col-sm-11">
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input (input)="search()" [(ngModel)]="str" type="text" placeholder="Search for a movie title" aria-label="Number" matInput  [formControl]="myControl" [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option   *ngFor="let option of options" [value]="option.title" (click)="selection(option)">
+            {{ option.title  }}  {{ option.year}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+  </div>
+
+</div>
